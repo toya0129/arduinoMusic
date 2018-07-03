@@ -24,8 +24,6 @@ int Astate = 0;
 int Bstate = 0;
 int C2state = 0;
 
-char mode;
-
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(57600);
@@ -49,6 +47,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   readVibrationSensor();
+  delay(300);
 }
 
 void readVibrationSensor(){
